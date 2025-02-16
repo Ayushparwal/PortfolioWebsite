@@ -4,18 +4,19 @@ import { Github } from 'lucide-react';
 import { FaKaggle } from "react-icons/fa";
 import { SiHuggingface, SiLeetcode } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
-import emailjs from '@emailjs/browser'; // Import EmailJS
+import emailjs from '@emailjs/browser'; 
 
 export const Contact = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState('');
 
   const socialLinks = [
-    { icon: Github, label: 'GitHub', href: 'https://github.com/Raghu6798' },
-    { icon: FaLinkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/raghu-nandan-82a23b283/' },
-    { icon: FaKaggle, label: 'Kaggle', href: "https://www.kaggle.com/raghunandan9605" },
-    { icon: SiHuggingface, label: 'HuggingFace', href: "https://huggingface.co/RaghuCourage9605" },
-    { icon: SiLeetcode, label: 'Leetcode', href: "https://leetcode.com/u/Raghu6798/" }
+    { icon: Github, label: 'GitHub', href: 'https://github.com/Ayushparwal' },
+    { icon: FaLinkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/ayush-parwal-797a79255/' },
+    { icon: FaKaggle, label: 'Kaggle', href: "https://www.kaggle.com/ayushparwal" },
+    { icon: SiHuggingface, label: 'HuggingFace', href: "https://huggingface.co/ayushparwal2004" },
+    { icon: SiLeetcode, label: 'Leetcode', href: "https://leetcode.com/u/ayushparwal22/" },
+    // { icon: SiX, label: "X", href: "https://x.com/ayushparwal2004" },
   ];
 
   const handleChange = (e) => {

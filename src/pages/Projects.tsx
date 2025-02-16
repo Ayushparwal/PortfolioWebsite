@@ -5,29 +5,32 @@ import { Github, ExternalLink } from 'lucide-react';
 export const Projects = () => {
   const projects = [
     {
-      title: 'Multi-Modal-RAG',
-      description: 'This project enables question answering on documents, videos, and images. Users can upload PDFs, DOCX files, images, or YouTube videos to query specific information using advanced language models.',
-      tags: ['Streamlit', 'Langchain', 'MistralAI', 'FAISS','Deepseek-r1-Distill-llama-70b'],
-      image: 'https://developer-blogs.nvidia.com/wp-content/uploads/2024/03/multi-modal-rag-featured.jpg'
+      title: "Speech Emotion Detection",
+      description: "This project analyzes human speech to detect emotions such as happiness, sadness, anger, and neutrality using advanced Natural Language Processing (NLP) and audio feature extraction techniques. By leveraging MFCC (Mel-Frequency Cepstral Coefficients) for speech signal processing and machine learning models built with Python, the system can classify emotions in real-time or from recorded audio inputs. This is useful for sentiment analysis, call center monitoring, mental health assessment, and interactive AI applications.",
+      tags: ["Python", "NLP", "MFCC", "Speech Recognition", "Deep Learning"],
+      image: "https://developer-blogs.nvidia.com/wp-content/uploads/2024/03/multi-modal-rag-featured.jpg"
     },
     {
-      title: 'GraphRAG with short term Memory',
-      description: 'This project combines Neo4j, HuggingFace embeddings, and Google Gemini AI for intelligent Q&A. Using graph-based retrieval, conversational memory, and Cypher queries, it delivers context-aware responses with LangChain and Gradio. 🚀',
-      tags: ['Langchain', 'Neo4j', 'Hugggingface Spaces', 'Gemini-2.0-Flash'],
-      image: 'https://dist.neo4j.com/wp-content/uploads/20240715102206/graph-creation-1.png'
+      title: "Smoke Prediction",
+      description: "This project utilizes machine learning models to predict smoke levels based on environmental factors such as temperature, humidity, wind speed, various health factors and air quality metrics. By leveraging advanced algorithms like XGBoost, the system can detect potential fire hazards and assess air pollution levels in real-time. Built with Streamlit for an interactive UI, the model provides accurate predictions, making it useful for environmental monitoring, disaster prevention, and industrial safety applications.",
+      tags: ["Machine Learning", "XGBoost", "Streamlit", "Air Quality", "Environmental Monitoring"],
+      image: "https://dist.neo4j.com/wp-content/uploads/20240715102206/graph-creation-1.png"
     },
+    
     {
-      title: 'Built and pre-trained custom GPT-2 from scratch',
-      description: 'Prompts users to enter their basic queries , doubts ',
-      tags: ['python', 'pytorch'],
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4aagsJBmXDC8z9y8S6MnYeIPIz16cZz9rqsxsZXOfQkcmxBLuPBZpAc5IHZnttyyQqhw&usqp=CAU'
+      title: "MazeSolver",
+      description: "This project implements a pathfinding algorithm to navigate mazes efficiently. Using the Hill Climbing algorithm, it iteratively searches for the optimal path by evaluating neighboring moves based on heuristic values. Built with Python and PyTorch, the solver intelligently explores the maze to find a better path while avoiding local optima. It can be applied to robotics, AI-driven navigation, and game development.",
+      tags: ["Python", "PyTorch", "Hill Climbing", "Pathfinding", "AI", "Tkinter"],
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4aagsJBmXDC8z9y8S6MnYeIPIz16cZz9rqsxsZXOfQkcmxBLuPBZpAc5IHZnttyyQqhw&usqp=CAU"
     },
+    
     {
-      title: 'RAG applications with cloud vector Databases',
-      description: 'A project demonstrating cloud-based  Generation techniques to improve real-time knowledge retrieval.',
-      tags: ['Qdrant','AstraDB','Langchain'],
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1_OoKECJy1dtdM6h3Mguiz3nW7V0psl-4Kp5NsweQX-XPPmxbpeYmKmZvUXCX0tuZ9rM&usqp=CAU'
+      title: "Plant Disease Classification",
+      description: "This project leverages deep learning and pre-trained models to classify plant diseases from leaf images. By analyzing visual patterns, the model can identify diseases early, helping farmers and agricultural experts take preventive actions. Built using Python, Streamlit for an interactive UI, and LangChain for enhanced retrieval-based insights, the system ensures accurate and real-time classification. The solution can be deployed on the cloud for scalability, making it useful for smart agriculture applications.",
+      tags: ["Deep Learning", "Pre-trained Models", "LangChain", "Streamlit", "Python", "Agriculture AI"],
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1_OoKECJy1dtdM6h3Mguiz3nW7V0psl-4Kp5NsweQX-XPPmxbpeYmKmZvUXCX0tuZ9rM&usqp=CAU"
     }
+    
   ];
 
   return (

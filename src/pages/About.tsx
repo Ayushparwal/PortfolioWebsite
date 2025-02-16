@@ -18,6 +18,11 @@ export const About = () => {
       icon: Database,
       title: 'Minimal Backend',
       description: 'Connecting frontend applications with backend using Python frameworks like FastAPI, Django, and Flask for hosting AI models and building scalable APIs.'
+    },
+    {
+      icon: Brain,
+      title: "LLM & Generative AI",
+      description: "Building intelligent applications using Large Language Models (LLMs) and Generative AI with frameworks like LangChain, Hugging Face Transformers, OpenAI API, and DeepSpeed for fine-tuning and inference."
     }
   ];
 
@@ -43,7 +48,7 @@ export const About = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.3 }}
       >
-        I'm a passionate AI developer focused on creating innovative solutions that bridge the gap between cutting-edge AI technology and real-world applications. With expertise in both AI development and software engineering, I bring a unique perspective to every project.
+        I'm a passionate AI & ML developer focused on creating innovative solutions that bridge the gap between cutting-edge AI technology and real-world applications. With expertise in both AI development and Model Building, I bring a unique perspective to every project in Data Science.
       </motion.p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

@@ -21,11 +21,22 @@ export const Home = () => {
     { name: "LangChain", icon: SiLangchain },
     { name: "Pandas", icon: SiPandas },
     { name: "Streamlit", icon: SiStreamlit },
-    {name:"PyTorch",icon:SiPytorch},
-    {name:"Tensorflow",icon:SiTensorflow},
-    {name:"Scikit-Learn",icon:SiScikitlearn},
-    {name:"Keras",icon:SiKeras}
-]
+    { name: "PyTorch", icon: SiPytorch },
+    { name: "TensorFlow", icon: SiTensorflow },
+    { name: "Scikit-Learn", icon: SiScikitlearn },
+    { name: "Keras", icon: SiKeras },
+    // { name: "Matplotlib", icon: SiMatplotlib },
+    // { name: "Seaborn", icon: SiSeaborn },
+    // { name: "NLTK", icon: SiNltk },
+    // { name: "SpaCy", icon: SiSpacy },
+    // { name: "Transformers", icon: SiHuggingface },
+    // { name: "OpenAI API", icon: SiOpenai },
+    // { name: "DeepSpeed", icon: SiDeepspeed },
+    // { name: "LlamaIndex", icon: SiLlama },
+    // { name: "FastAPI", icon: SiFastapi },
+    // { name: "Flask", icon: SiFlask }
+];
+
 
   return (
     <motion.div
