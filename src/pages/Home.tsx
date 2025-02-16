@@ -46,7 +46,7 @@ export const Home = () => {
         <Sparkle className="w-6 h-6" />
       </motion.div>
 
-      <RGBName name="Raghu Nandan" />
+      <RGBName name="Ayush Parwal" />
 
       <motion.p
         className="mt-8 text-xl text-gray-400 max-w-2xl text-center"
