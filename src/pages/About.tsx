@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Brain, Code, Cpu, Database } from 'lucide-react';
+import { Brain, Cpu, Database, Cloud, Code, Users, Settings, GitBranch } from 'lucide-react';  
 
 export const About = () => {
   const skills = [
@@ -20,9 +20,29 @@ export const About = () => {
       description: 'Connecting frontend applications with backend using Python frameworks like FastAPI, Django, and Flask for hosting AI models and building scalable APIs.'
     },
     {
-      icon: Brain,
-      title: "LLM & Generative AI",
-      description: "Building intelligent applications using Large Language Models (LLMs) and Generative AI with frameworks like LangChain, Hugging Face Transformers, OpenAI API, and DeepSpeed for fine-tuning and inference."
+      icon: Cloud,  
+      title: 'Cloud Computing',
+      description: 'Utilizing cloud platforms like AWS, GCP, and Azure for scalable and distributed machine learning model deployment and management.'
+    },
+    {
+      icon: Code,  
+      title: 'Full Stack Development',
+      description: 'Experience in building end-to-end applications with a focus on frontend development using React and backend development with Python frameworks.'
+    },
+    {
+      icon: Users, 
+      title: 'Collaborative Projects',
+      description: 'Strong experience in working with cross-functional teams to deliver machine learning solutions and AI-driven products in an agile environment.'
+    },
+    {
+      icon: Settings,  
+      title: 'Model Deployment & Maintenance',
+      description: 'Managing lifecycle of deployed AI models, ensuring continuous training and integration with cloud and on-premise systems.'
+    },
+    {
+      icon: GitBranch,  
+      title: 'Version Control & CI/CD',
+      description: 'Proficient with Git, GitHub, and implementing CI/CD pipelines for smooth deployment of machine learning models and applications.'
     }
   ];
 

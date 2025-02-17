@@ -9,8 +9,6 @@ import { SiLangchain, SiPandas, SiStreamlit, SiPytorch, SiTensorflow, SiScikitle
          SiNumpy, SiOpencv, SiFastapi, SiFlask, SiHuggingface,  
          SiOpenai, SiSpacy, SiJupyter, SiMlflow} from "react-icons/si";  
 import { Sparkle, Terminal } from "lucide-react";
-// import { SiAnthropic, SiMistral } from "react-icons/si";
-
 
 
 export const Home = () => {
@@ -21,30 +19,22 @@ export const Home = () => {
     { name: "LangChain", icon: SiLangchain },
     { name: "Pandas", icon: SiPandas },
     { name: "NumPy", icon: SiNumpy },
-    // { name: "Matplotlib", icon: SiMatplotlib },
-    // { name: "Seaborn", icon: SiSeaborn },
     { name: "OpenCV", icon: SiOpencv },
     { name: "Scikit-Learn", icon: SiScikitlearn },
     { name: "TensorFlow", icon: SiTensorflow },
     { name: "PyTorch", icon: SiPytorch },
-    // { name: "PyTorch Lightning", icon: SiPytorchlightning },
     { name: "Keras", icon: SiKeras },
     { name: "Transformers", icon: SiHuggingface },
     { name: "SpaCy", icon: SiSpacy },
-    // { name: "NLTK", icon: SiNltk },
-    // { name: "LlamaIndex", icon: SiLlama },
     { name: "Hugging Face", icon: SiHuggingface },
     { name: "OpenAI API", icon: SiOpenai },
-    // { name: "DeepSpeed", icon: SiDeepspeed },
     { name: "FastAPI", icon: SiFastapi },
     { name: "Flask", icon: SiFlask },
     { name: "Jupyter", icon: SiJupyter },
-    // { name: "Apache Spark", icon: SiApachespark },
-    // { name: "Cython", icon: SiCython },
+
     { name: "Streamlit", icon: SiStreamlit },
     { name: "Kaggle", icon: SiKaggle },
     { name: "Github", icon: FaGithub },
-    // { name: "Weights & Biases", icon: SiWeightsandbiases },
     { name: "MLflow", icon: SiMlflow },
 ];
 
