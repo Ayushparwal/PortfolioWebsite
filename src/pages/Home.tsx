@@ -31,7 +31,7 @@ export const Home = () => {
     // { name: "SpaCy", icon: SiSpacy },
     // { name: "Transformers", icon: SiHuggingface },
     // { name: "OpenAI API", icon: SiOpenai },
-    // { name: "DeepSpeed", icon: SiDeepspeed },
+    // { name: "DeepSpeed", icon: SiDeepspeed },vhkb jml,/
     // { name: "LlamaIndex", icon: SiLlama },
     // { name: "FastAPI", icon: SiFastapi },
     // { name: "Flask", icon: SiFlask }
