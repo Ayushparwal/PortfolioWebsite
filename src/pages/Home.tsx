@@ -76,12 +76,12 @@ export const Home = () => {
   animate={{ y: 0, opacity: 1 }}
   transition={{ delay: 0.6 }}
 >
-  <a href="/projects">
+  <a href="/Projects">
     <button className="px-8 py-3 rounded-full bg-purple-600 hover:bg-purple-700 transition-colors">
       View Projects
     </button>
   </a>
-  <a href="/contact">
+  <a href="/Contact">
     <button className="px-8 py-3 rounded-full border border-purple-600 hover:bg-purple-600/10 transition-colors">
       Contact Me
     </button>
