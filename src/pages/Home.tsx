@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { RGBName } from "../components/RGBName";
-import { SiLangchain } from "react-icons/si";
-import { FaPython } from "react-icons/fa6";
-import { SiPandas } from "react-icons/si";
-import { SiStreamlit } from "react-icons/si";
+
+import { FaGithub } from "react-icons/fa";
+import { FaPython } from "react-icons/fa";  
+import { SiKaggle } from "react-icons/si";
+import { SiLangchain, SiPandas, SiStreamlit, SiPytorch, SiTensorflow, SiScikitlearn, SiKeras,  
+         SiNumpy, SiOpencv, SiFastapi, SiFlask, SiHuggingface,  
+         SiOpenai, SiSpacy, SiJupyter, SiMlflow} from "react-icons/si";  
 import { Sparkle, Terminal } from "lucide-react";
-import { SiPytorch } from "react-icons/si";
-import { SiTensorflow } from "react-icons/si";
-import { SiScikitlearn } from "react-icons/si";
-import { SiKeras } from "react-icons/si";
+// import { SiAnthropic, SiMistral } from "react-icons/si";
 
 
 
@@ -20,21 +20,32 @@ export const Home = () => {
     { name: "Python", icon: FaPython },
     { name: "LangChain", icon: SiLangchain },
     { name: "Pandas", icon: SiPandas },
-    { name: "Streamlit", icon: SiStreamlit },
-    { name: "PyTorch", icon: SiPytorch },
-    { name: "TensorFlow", icon: SiTensorflow },
-    { name: "Scikit-Learn", icon: SiScikitlearn },
-    { name: "Keras", icon: SiKeras },
+    { name: "NumPy", icon: SiNumpy },
     // { name: "Matplotlib", icon: SiMatplotlib },
     // { name: "Seaborn", icon: SiSeaborn },
+    { name: "OpenCV", icon: SiOpencv },
+    { name: "Scikit-Learn", icon: SiScikitlearn },
+    { name: "TensorFlow", icon: SiTensorflow },
+    { name: "PyTorch", icon: SiPytorch },
+    // { name: "PyTorch Lightning", icon: SiPytorchlightning },
+    { name: "Keras", icon: SiKeras },
+    { name: "Transformers", icon: SiHuggingface },
+    { name: "SpaCy", icon: SiSpacy },
     // { name: "NLTK", icon: SiNltk },
-    // { name: "SpaCy", icon: SiSpacy },
-    // { name: "Transformers", icon: SiHuggingface },
-    // { name: "OpenAI API", icon: SiOpenai },
-    // { name: "DeepSpeed", icon: SiDeepspeed },vhkb jml,/
     // { name: "LlamaIndex", icon: SiLlama },
-    // { name: "FastAPI", icon: SiFastapi },
-    // { name: "Flask", icon: SiFlask }
+    { name: "Hugging Face", icon: SiHuggingface },
+    { name: "OpenAI API", icon: SiOpenai },
+    // { name: "DeepSpeed", icon: SiDeepspeed },
+    { name: "FastAPI", icon: SiFastapi },
+    { name: "Flask", icon: SiFlask },
+    { name: "Jupyter", icon: SiJupyter },
+    // { name: "Apache Spark", icon: SiApachespark },
+    // { name: "Cython", icon: SiCython },
+    { name: "Streamlit", icon: SiStreamlit },
+    { name: "Kaggle", icon: SiKaggle },
+    { name: "Github", icon: FaGithub },
+    // { name: "Weights & Biases", icon: SiWeightsandbiases },
+    { name: "MLflow", icon: SiMlflow },
 ];
 
 
@@ -53,7 +64,7 @@ export const Home = () => {
         transition={{ delay: 0.2 }}
       >
         <Terminal className="w-6 h-6" />
-        <span>Generative AI Developer</span>
+        <span>AI Developer</span>
         <Sparkle className="w-6 h-6" />
       </motion.div>
 
@@ -65,24 +76,28 @@ export const Home = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.4 }}
       >
-        Crafting the future of AI-powered applications with creative solutions
-        and cutting-edge technology.
+        Transforming data into intelligent solutions with the power of Machine Learning and AI-driven innovation.🚀
       </motion.p>
 
       {/* Buttons */}
       <motion.div
-        className="mt-12 flex gap-6"
-        initial={{ y: 20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.6 }}
-      >
-        <button className="px-8 py-3 rounded-full bg-purple-600 hover:bg-purple-700 transition-colors">
-          View Projects
-        </button>
-        <button className="px-8 py-3 rounded-full border border-purple-600 hover:bg-purple-600/10 transition-colors">
-          Contact Me
-        </button>
-      </motion.div>
+  className="mt-12 flex gap-6"
+  initial={{ y: 20, opacity: 0 }}
+  animate={{ y: 0, opacity: 1 }}
+  transition={{ delay: 0.6 }}
+>
+  <a href="/projects">
+    <button className="px-8 py-3 rounded-full bg-purple-600 hover:bg-purple-700 transition-colors">
+      View Projects
+    </button>
+  </a>
+  <a href="/contact">
+    <button className="px-8 py-3 rounded-full border border-purple-600 hover:bg-purple-600/10 transition-colors">
+      Contact Me
+    </button>
+  </a>
+</motion.div>
+
 
       {/* Tech Stack */}
       <motion.div
