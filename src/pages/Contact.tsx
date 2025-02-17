@@ -1,47 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Github } from 'lucide-react';
 import { FaKaggle } from "react-icons/fa";
 import { SiHuggingface, SiLeetcode } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
-import emailjs from '@emailjs/browser'; 
 
 export const Contact = () => {
-  const [form, setForm] = useState({ name: '', email: '', message: '' });
-  const [status, setStatus] = useState('');
-
   const socialLinks = [
     { icon: Github, label: 'GitHub', href: 'https://github.com/Ayushparwal' },
     { icon: FaLinkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/ayush-parwal-797a79255/' },
     { icon: FaKaggle, label: 'Kaggle', href: "https://www.kaggle.com/ayushparwal" },
     { icon: SiHuggingface, label: 'HuggingFace', href: "https://huggingface.co/ayushparwal2004" },
     { icon: SiLeetcode, label: 'Leetcode', href: "https://leetcode.com/u/ayushparwal22/" },
-    // { icon: SiX, label: "X", href: "https://x.com/ayushparwal2004" },
   ];
-
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.id]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    emailjs.send(
-      'service_ows1khm', // Replace with your EmailJS service ID
-      'template_o2g5xsq', // Replace with your EmailJS template ID
-      form,
-      'iwyRwmcVk06PmNR4i' // Replace with your EmailJS public key
-    ).then(
-      () => {
-        setStatus('Message sent successfully!');
-        setForm({ name: '', email: '', message: '' }); // Clear form
-      },
-      (error) => {
-        setStatus('Failed to send message. Try again.');
-        console.error(error);
-      }
-    );
-  };
 
   return (
     <motion.div
@@ -83,62 +54,21 @@ export const Contact = () => {
             ))}
           </div>
         </motion.div>
-
-        <motion.form
-          className="space-y-6"
-          initial={{ x: 50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.4 }}
-          onSubmit={handleSubmit}
-        >
-          <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-400 mb-2">
-              Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              value={form.name}
-              onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 focus:border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500/20 text-white"
-              required
-            />
-          </div>
-          <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-400 mb-2">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              value={form.email}
-              onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 focus:border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500/20 text-white"
-              required
-            />
-          </div>
-          <div>
-            <label htmlFor="message" className="block text-sm font-medium text-gray-400 mb-2">
-              Message
-            </label>
-            <textarea
-              id="message"
-              rows={4}
-              value={form.message}
-              onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 focus:border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500/20 text-white"
-              required
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            className="w-full px-8 py-3 rounded-lg bg-purple-600 hover:bg-purple-700 transition-colors font-medium"
-          >
-            Send Message
-          </button>
-          {status && <p className="text-white mt-4">{status}</p>}
-        </motion.form>
       </div>
+
+      {/* Footer Section */}
+      <footer className="mt-16 text-center text-gray-400">
+        <p>
+          You can message me at{' '}
+          <a href="mailto:ayushparwal777@gmail.com" className="text-purple-500 hover:text-white">
+            ayushparwal777@gmail.com
+          </a>{' '}
+          for any query.
+        </p>
+        <p className="mt-4 text-sm">
+          &copy; {new Date().getFullYear()} All rights reserved.
+        </p>
+      </footer>
     </motion.div>
   );
 };
